@@ -3,18 +3,17 @@ import java.util.Scanner;
 /**
  * Created by wojcik.jaroslaw1 on 03.04.2019.
  */
-public class Main {
 
+public class Main {
 
     public static void main(String[] args) {
 
         TextFileInterface textFile = new TextFileDAO();
         Scanner scr = new Scanner(System.in);
-
+        
         String FILENAME = null;
         int decision;
         int whetherToAnalyzeTheFile = -1;
-
 
         do {
             System.out.print("What do you want will todo: 0 - exit" +

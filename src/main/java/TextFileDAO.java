@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 /**
  * Created by wojcik.jaroslaw1 on 04.04.2019.
  */
+
 public class TextFileDAO implements TextFileInterface {
 
     private static String FILENAME;
@@ -23,7 +24,6 @@ public class TextFileDAO implements TextFileInterface {
         a.setVisible(true);
 
         FileDialog fd = new FileDialog(a, "Select file", FileDialog.LOAD);
-        // Ewentualnie: FileDialog fd =new FileDialog(a,"Zapisz",FileDialog.SAVE);
         fd.setVisible(true);
         a.setVisible(false);
         String katalog = fd.getDirectory();
@@ -125,7 +125,6 @@ public class TextFileDAO implements TextFileInterface {
                         .thenComparing(Map.Entry.comparingByKey()))
                 .limit(10)
                 .forEach(e -> System.out.println(e.getKey() + " " + e.getValue()));
-
     }
 
 }
